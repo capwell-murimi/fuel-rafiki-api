@@ -801,12 +801,12 @@ def get_car(id: int):
         raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="post not found")
     return {"car": car}
 
-@app.post("/cars", status_code=status.HTTP_201_CREATED)
-def add_car(car: Car, id: int):
-    car_dict = car.model_dump()
+#@app.post("/cars", status_code=status.HTTP_201_CREATED)
+#def add_car(car: Car, id: int):
+   # car_dict = car.model_dump()
     
     
-    car_dict['id'] = range(0,100000)
+    #car_dict['id'] = range(0,100000)
     
-    my_cars.append(car_dict)
-    return{"message": car_dict}
+    #my_cars.append(car_dict)
+    #return{"message": car_dict}
