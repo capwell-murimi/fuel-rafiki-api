@@ -1,5 +1,3 @@
-pip install fastapi "uvicorn[standard]"
-pip freeze > requirements.txt
 annotated-types==0.6.0
 anyio==4.2.0
 click==8.1.7
