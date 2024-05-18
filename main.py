@@ -791,7 +791,7 @@ def get_messo():
 
 @app.get("/cars")
 def get_cars(): # type: ignore
-    return {my_cars}
+    return {"cars":my_cars}
 
 @app.get("/cars/{id}")
 def get_car(id: int):
