@@ -785,7 +785,7 @@ my_cars = [
     }  
 ]
 
-@app.get()
+@app.get("/")
 def get_messo():
     return {"message" : {"there are only two links for now"}, "links" : {"link/cars and link/cars/id_of_car"}, "more info" : {"only a few vehicles are available for now"}}
 
